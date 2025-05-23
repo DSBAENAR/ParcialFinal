@@ -19,10 +19,12 @@ public class Shift {
     private LocalDateTime createdAt;
     private ShiftStatus status;
 
-    private String userRole;
+    private Type userRole;
 
-    public Shift(String userId) {
+    public Shift(String userId,String id,String specialty) {
+        this.id = id;
         this.userId = userId;
+        this.specialty = specialty;
     }
 
     public String getId() {
@@ -77,11 +79,11 @@ public class Shift {
         this.username = username;
     }
 
-    public String getUserRole() {
+    public Type getUserRole() {
         return userRole;
     }
 
-    public void setUserRole(String userRole) {
+    public void setUserRole(Type userRole) {
         this.userRole = userRole;
     }
     

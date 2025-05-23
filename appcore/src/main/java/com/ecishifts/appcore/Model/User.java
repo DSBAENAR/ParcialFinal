@@ -1,21 +1,18 @@
 package com.ecishifts.appcore.Model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Users")
 public class User {
-    String id;
     String name;
+    @Id
     String mail;
     Type type;
-    public User(String iD, String name, String mail, Type type) {
-        this.id = iD;
+    public User(String name, String mail, Type type) {
         this.name = name;
         this.mail = mail;
         this.type = type;
-    }
-    public String getID() {
-        return id;
-    }
-    public void setID(String iD) {
-        id = iD;
     }
     public String getName() {
         return name;
