@@ -13,3 +13,4 @@ Obtiene los turnos por el rol de usuario
 
 Link backend
 parfinal-duguhac0crdehmga.canadacentral-01.azurewebsites.net
+![image](https://github.com/user-attachments/assets/4e1910cb-a3de-416e-8ec6-3cf79a7e6139)
